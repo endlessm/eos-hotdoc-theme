@@ -10,7 +10,7 @@ themedir = sys.argv[1]
 srcdir = sys.argv[2]
 archivename = sys.argv[3]
 
-for extra in ['images', 'templates']:
+for extra in ['css', 'images', 'templates']:
     extradir = os.path.join(srcdir, extra)
     for f in os.listdir(extradir):
         shutil.copy(os.path.join(extradir, f), os.path.join(themedir, extra))
