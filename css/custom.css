@@ -33,8 +33,17 @@ pre {
     }
 }
 
-/* Remove the green border on the side navigation, it looks clunky */
-.sidenav-panel-current > .panel-heading,
-.sidenav-panel-current > span > .panel-heading {
-    border-left: 0px;
+/* Fix the "Edit on Github" button so it's an accent color, not the primary */
+
+a[data-hotdoc-role='edit-button'] {
+    text-transform: uppercase;
+    font-size: 75%;
+    background-color: #07afa7;
+    border-color: #068d86;  /* darken success-color 7% */
+}
+
+a[data-hotdoc-role='edit-button']:hover:hover {
+    font-size: 75%;
+    background-color: #068d86;  /* darken success-color 7% */
+    border-color: #297e52;  /* darken success-color 15% */
 }
